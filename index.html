@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza layout</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* navbar */
+        nav{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding:15px 40px;
+            border-bottom:1px solid #ccc
+        }
+        nav h1{
+            margin :0;
+            font-size:22px;
+        }
+        nav div{
+            display:flex;
+            gap: 30px;
+        }
+        nav div p{
+            margin :0;
+           font-size: 14px;
+        }
+        nav button{
+            background: hotpink;
+            border: none;
+            padding: 8px 18px;
+            color: white;
+            border-radius: 4px;
+        }
+        /* top */
+        #top{
+            padding: 30px 40px;
+
+        }
+        #top h2{
+            margin-bottom: 20px;
+        }
+        #top-grid{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+        }
+        #top .card{
+            background:#ff4a4a;
+            padding:20px;
+            text-align: center;
+            color: white;
+        }
+        #top img{
+            width:120px;
+            height:120px;
+        }
+        #top button{
+            margin-top: 10px;
+            padding:5px 10px;
+            border : none;
+            background: white;
+        }
+        /* mid */
+        #mid{
+            padding:30px 40px;
+        }
+        #mid h2{
+            margin-bottom: 20px;
+        }
+        #mid .grid{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+        #mid .card{
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        #mid img{
+            width:60px;
+        }
+        /* bottoim */
+        #bottom{
+            display: flex;
+            justify-content: space-between;
+            padding:40px;
+            align-items: center;
+        }
+        #bottom img{
+            width:200px;
+        }
+        #bottom div h1{
+            margin:0 0 10px
+        }
+
+    </style>
+</head>
+<body>
+   <!-- navbar -->
+    <nav>
+        <h1>Domino's Pizza</h1>
+        <div>
+            <p>OUR MENU</p>
+            <p>DOMINO'S STORES</p>
+            <p>GIFT CARD</p>
+            <p>CORPORATE ENQUIRY</p>
+            <P>CONTACT</P>
+        </div>
+        <button>Download App</button>
+    </nav>
+    <!-- top section -->
+     <section id="top">
+        <h2>Order</h2>
+        <div class ="grid">
+            <div class ="card">
+                <img src ="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt ="pizza">
+                <h3>VEG PIZZA</h3>
+                <p>A delight for veggie lovers! Choose from our wide range of delicious vegeterian pizzas, it's softer and tastier</p>
+                <button>VIEW ALL</button>
+            </div>
+             <div class ="card">
+                <img src ="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt ="pizza">
+                <h3>VEG PIZZA</h3>
+                <p>A delight for veggie lovers! Choose from our wide range of delicious vegeterian pizzas, it's softer and tastier</p>
+                <button>VIEW ALL</button>
+            </div>
+             <div class ="card">
+                <img src ="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-22/Screenshot%202022-12-22%20at%208.37.04%20AM_353938.png" alt ="pizza">
+                <h3>VEG PIZZA</h3>
+                <p>A delight for veggie lovers! Choose from our wide range of delicious vegeterian pizzas, it's softer and tastier</p>
+                <button>VIEW ALL</button>
+            </div>
+        </div>
+     </section>
+     <!-- mid section -->
+      <section id ="mid">
+        <h2>Explore</h2>
+        <div class = "grid">
+            <div class ="card">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png"alt="ico
+                n">
+                <h3>OUR MENU</h3>
+                <p>Explore delicious pizza, delivered in 30 minutes</p>
+                <p>DISCOVER PIZZA</p>
+            </div>
+            <div class ="card">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png"alt="ico
+                n">
+                <h3>OUR MENU</h3>
+                <p>Explore delicious pizza, delivered in 30 minutes</p>
+                <p>DISCOVER PIZZA</p>
+            </div>
+            <div class ="card">
+                <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%203.06.17%20PM_590391.png"alt="ico
+                n">
+                <h3>OUR MENU</h3>
+                <p>Explore delicious pizza, delivered in 30 minutes</p>
+                <p>DISCOVER PIZZA</p>
+            </div>
+        </div>
+      </section>
+      <!-- bottom section -->
+       <section id="bottom">
+        <img src ="https://thumbs.dreamstime.com/b/new-delhi-india-flat-lay-mobile-phone-showing-domino-s-pizza-delivery-mobile-app-wooden-board-background-new-delhi-185889455.jpg"alt ="phones">
+        <div>
+            <h1>Unlock Exclusive Offers</h1>
+            <p>For lightning fast ordering experences download the dominos app</p>
+            <img src ="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.09%20PM_558991.png"alt ="google">
+            <img src ="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-12-21/Screenshot%202022-12-21%20at%202.47.43%20PM_652243.png"alt ="apple">
+        </div>
+       </section>
+</body>
+</html>
